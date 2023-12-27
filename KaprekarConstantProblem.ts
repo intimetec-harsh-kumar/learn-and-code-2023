@@ -34,7 +34,7 @@ function IsValid(inputNumber:number):boolean{
 }
 
 const inputNumber = 3524;
-if (isValid(inputNumber)){
+if (IsValid(inputNumber)){
     const totalIterations = kaprekarRoutine(inputNumber);
     console.log(`Kaprekar's Routine reached 6174 in ${totalIterations} iterations.`);
 }else{
@@ -46,8 +46,8 @@ if (isValid(inputNumber)){
 //test Cases
 // kaprekarRoutine(3524)---->3;
 // AddLeadingZeroes('123')---->'0123';
-// isValid(3524)---->true;
-// isValid(12345)---->false;
-// isValid('invalid')---->false;
-// isValid(999)---->false;
-// isValid(-1000)---->false;
+// IsValid(3524)---->true;
+// IsValid(12345)---->false;
+// IsValid('invalid')---->false;
+// IsValid(999)---->false;
+// IsValid(-1000)---->false;
