@@ -24,7 +24,7 @@ function AddLeadingZeroes(stringNumber:string):string {
     return stringNumber;
 }
 
-function isValid(inputNumber:number):boolean{
+function IsValid(inputNumber:number):boolean{
     let stringNumber = inputNumber.toString();
     if (isNaN(inputNumber) || stringNumber.match(/[a-zA-Z]/) || inputNumber < 1000 || inputNumber > 9999) {
         return false
