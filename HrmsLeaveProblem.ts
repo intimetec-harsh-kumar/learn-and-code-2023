@@ -1,25 +1,34 @@
 Class Employee:
-	information...
-	//--------inherit LeaveRequest----------
-	leaveRequest = LeaveRequest()      
+	ID,Name,LeaveBalance
+	leaveRequest = LeaveRequest()   
+    project = Project()   
 	appliedLeave = LeaveRequest.submitLeaveRequest()
-	print(appliedLeave)
+	leaveRequest.checkLeaveStatus()
 
 Class LeaveRequest():
 	status = ""
 	submitLeaveRequest(){
 		update status...
 	}
-	
-Class Manager:
-	projectDelivered = false/true
+    checkLeaveStatus(){
+        return status
+    }
+
+Class Project():
+    ID,Name,EstimatedDate
+	getProjectDetails(){}
+	checkDeliverableStatus(){}
+
+Class HRManager:
+	leaveRequest = LeaveRequest() 
+	project = Project()
 	approvedLeaveRequest(){
 		update status...
 	}
 	rejectLeaveRequest(){
 		update status...
 	}
-	if projectDelivered :
+	if project.checkDeliverableStatus:
 		approvedLeaveRequest()
 	else:
 		rejectLeaveRequest()
