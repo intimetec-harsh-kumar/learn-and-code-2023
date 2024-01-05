@@ -1,7 +1,7 @@
 Class Employee:
 	ID,Name,LeaveBalance
 	leaveRequest = LeaveRequest()   
-    project = Project()   
+        project = Project()   
 	appliedLeave = LeaveRequest.submitLeaveRequest()
 	leaveRequest.checkLeaveStatus()
 
@@ -10,12 +10,12 @@ Class LeaveRequest():
 	submitLeaveRequest(){
 		update status...
 	}
-    checkLeaveStatus(){
-        return status
-    }
+        checkLeaveStatus(){
+        	return status
+        }
 
 Class Project():
-    ID,Name,EstimatedDate
+        ID,Name,EstimatedDate
 	getProjectDetails(){}
 	checkDeliverableStatus(){}
 
